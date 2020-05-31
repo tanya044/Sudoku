@@ -15,7 +15,20 @@ Easy algo:
 
 4. Remove colored vertices from the list and repeat the process until all vertices are colored.
 
+Contraction algo:
+1. Select the vertex of maximum degree V.
 
+2. Find the set of non-adjacent vertices to V.
+
+3. From this set select the vertex Y of maximum common vertices with V.
+
+4. Contract Y into V to be colored with the same color.
+
+5. Remove Y from the set and repeat steps 3-5 until the list is empty.
+
+6 .Remove vertex V from the graph
+
+7. Repeat steps 1-6 until the resulting graph has all contracted nodes adjacent to each other.
 
 In my implementation, I choose a greedy coloring algorithm with some modifications as proposed in the paper by Dr. Hussein Al-Omari and Khair Eddin Sabri published in the American Journal of Mathematics and Statistics.
 
